@@ -15,7 +15,7 @@ public class Print {
     public static void paymentSchedule(int principal, float annualInterest, byte years) {
         System.out.println("PAYMENT SCHEDULE");
         System.out.println("--------");
-        for (short month = 1; month <= years + Main.monthsInYear; month++) {
+        for (short month = 1; month <= years * Main.monthsInYear; month++) {
             double balance = Calculate.balance(principal, annualInterest, years, month);
             System.out.println(NumberFormat.getCurrencyInstance().format(balance));
         }

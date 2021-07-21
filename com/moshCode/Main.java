@@ -1,8 +1,5 @@
 package com.moshCode;
 
-import java.text.NumberFormat;
-import java.util.Scanner;
-
 public class Main {
     final static byte monthsInYear = 12;
     final static byte percent = 100;
